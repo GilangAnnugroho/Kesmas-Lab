@@ -175,7 +175,3 @@ Kami sangat terbuka untuk kolaborasi! Jika Anda ingin berkontribusi:
 <small>Dibuat dengan ❤️ untuk kemajuan kesehatan masyarakat.</small>
 
 </div>
-
-```
-
-```
