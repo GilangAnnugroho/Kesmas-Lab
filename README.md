@@ -59,6 +59,7 @@ Pastikan komputer Anda sudah terinstall: `PHP >= 8.1`, `Composer`, dan `Node.js`
 ### 2. Clone & Install Dependencies
 Salin repository dan install library yang dibutuhkan:
 
+```bash
 # Clone repository
 git clone [https://github.com/USERNAME-KAMU/kesmas-lab.git](https://github.com/USERNAME-KAMU/kesmas-lab.git)
 
@@ -76,6 +77,8 @@ npm install
 ### 3. Konfigurasi Environment
 
 Duplikat file konfigurasi dan generate kunci aplikasi:
+
+```bash
 # Duplikat file env
 cp .env.example .env
 
@@ -87,6 +90,8 @@ php artisan key:generate
 ### 4. Setup Database
 
 Buka file `.env` di text editor Anda, lalu sesuaikan bagian database:
+
+```ini
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -97,7 +102,10 @@ DB_PASSWORD=
 ```
 
 ### 5. Migrasi & Menjalankan Server
+
 Jalankan perintah berikut untuk membuat tabel dan memulai aplikasi:
+
+```bash
 # Migrasi tabel ke database
 php artisan migrate
 
@@ -116,6 +124,8 @@ npm run dev
 ## 📂 Struktur Direktori Utama
 
 Berikut adalah peta struktur folder untuk memudahkan navigasi kode:
+
+```text
 kesmas-lab/
 ├── app/
 │   ├── Http/Controllers/
@@ -133,6 +143,8 @@ kesmas-lab/
     └── web.php            # 🔗 Definisi URL & Routing
 
 ```
+
+---
 
 ## 👤 Akses Demo
 
