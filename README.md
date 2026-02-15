@@ -56,11 +56,13 @@ Ikuti langkah-langkah berikut untuk menjalankan project di local environment And
 ### 1. Persiapan Awal
 Pastikan komputer Anda sudah terinstall: `PHP >= 8.1`, `Composer`, dan `Node.js`.
 
-### 2. Clone & Install
+### 2. Clone & Install Dependencies
+Salin repository dan install library yang dibutuhkan:
+
 # Clone repository
 git clone [https://github.com/USERNAME-KAMU/kesmas-lab.git](https://github.com/USERNAME-KAMU/kesmas-lab.git)
 
-# Masuk ke direktori
+# Masuk ke direktori project
 cd kesmas-lab
 
 # Install Backend Dependencies
@@ -69,44 +71,50 @@ composer install
 # Install Frontend Dependencies
 npm install
 
----
+```
 
 ### 3. Konfigurasi Environment
+
+Duplikat file konfigurasi dan generate kunci aplikasi:
 # Duplikat file env
 cp .env.example .env
 
-# Generate App Key (Penting!)
+# Generate App Key
 php artisan key:generate
 
----
+```
 
 ### 4. Setup Database
-Buka file .env dan sesuaikan kredensial database Anda:
+
+Buka file `.env` di text editor Anda, lalu sesuaikan bagian database:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=kesmas_db  # Pastikan DB ini sudah dibuat di phpMyAdmin
+DB_DATABASE=kesmas_db  # Pastikan database ini sudah dibuat di phpMyAdmin
 DB_USERNAME=root
 DB_PASSWORD=
 
----
+```
 
 ### 5. Migrasi & Menjalankan Server
+Jalankan perintah berikut untuk membuat tabel dan memulai aplikasi:
 # Migrasi tabel ke database
 php artisan migrate
 
-# Jalankan server (Buka 2 terminal berbeda)
-# Terminal 1:
+# Jalankan server Laravel (Terminal 1)
 php artisan serve
 
-# Terminal 2 (Untuk compile aset):
+# Compile aset frontend (Terminal 2)
 npm run dev
 
-🚀 Aplikasi siap diakses di: http://127.0.0.1:8000
+```
+
+🚀 **Aplikasi siap diakses di:** `http://127.0.0.1:8000`
 
 ---
 
-📂 Struktur Direktori Utama
+## 📂 Struktur Direktori Utama
+
 Berikut adalah peta struktur folder untuk memudahkan navigasi kode:
 kesmas-lab/
 ├── app/
@@ -124,29 +132,38 @@ kesmas-lab/
 └── routes/
     └── web.php            # 🔗 Definisi URL & Routing
 
----
+```
 
-👤 Akses Demo
+## 👤 Akses Demo
+
 Gunakan akun berikut untuk pengujian sistem (Default Seeder):
-Role: Administrator
-Email: admin@kesmas.com
-Password: password123
+
+| Role | Email | Password | Akses |
+| --- | --- | --- | --- |
+| **Administrator** | `admin@kesmas.com` | `password123` | Full Akses |
 
 ---
 
-🤝 Kontribusi
+## 🤝 Kontribusi
+
 Kami sangat terbuka untuk kolaborasi! Jika Anda ingin berkontribusi:
-Fork repository ini.
-Buat branch fitur baru: git checkout -b fitur-keren.
-Commit perubahan: git commit -m 'Menambahkan fitur keren'.
-Push ke branch: git push origin fitur-keren.
-Submit Pull Request.
+
+1. **Fork** repository ini.
+2. Buat branch fitur baru: `git checkout -b fitur-keren`.
+3. Commit perubahan: `git commit -m 'Menambahkan fitur keren'`.
+4. Push ke branch: `git push origin fitur-keren`.
+5. Submit **Pull Request**.
 
 ---
+
 <div align="center">
 
-KESMAS-LAB © 2024 • Dilindungi oleh Lisensi MIT.
+**KESMAS-LAB** © 2024 • Dilindungi oleh Lisensi [MIT](https://opensource.org/licenses/MIT).
 
 <small>Dibuat dengan ❤️ untuk kemajuan kesehatan masyarakat.</small>
 
 </div>
+
+```
+
+```
