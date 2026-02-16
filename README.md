@@ -172,6 +172,4 @@ Kami sangat terbuka untuk kolaborasi! Jika Anda ingin berkontribusi:
 
 **KESMAS-LAB** © 2026 • Dilindungi oleh Lisensi [MIT](https://opensource.org/licenses/MIT).
 
-<small>Dibuat dengan ❤️ untuk kemajuan kesehatan masyarakat.</small>
-
 </div>
