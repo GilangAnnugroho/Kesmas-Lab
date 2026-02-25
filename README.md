@@ -14,8 +14,6 @@
   Dari Pendaftaran, Rekam Medis, hingga Validasi Hasil — <i>Paperless & Terintegrasi.</i>
 </p>
 
-[Fitur Utama](#-fitur-unggulan) • [Teknologi](#-teknologi) • [Instalasi](#-panduan-instalasi-cepat) • [Demo](#-akses-demo)
-
 </div>
 
 ---
