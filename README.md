@@ -39,7 +39,7 @@
 Project ini dibangun menggunakan fondasi teknologi modern yang stabil dan aman:
 
 * **Backend Core:** `Laravel 10.10` (PHP 8.1+)
-* **Database:** `MySQL / MariaDB`
+* **Database:** `MySQL`
 * **Frontend Asset:** `Vite` (HTML5, CSS3, JS)
 * **Templating:** `Blade Engine`
 * **Auth System:** `Laravel Sanctum`
